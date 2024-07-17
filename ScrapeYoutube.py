@@ -5,7 +5,7 @@ import pandas as pd
 def get_youtube_service():
     api_service_name = "youtube"
     api_version = "v3"
-    DEVELOPER_KEY = "AIzaSyA2gajszczy-vJkMdI6KjeZXM1mazG3I7I"  # Replace with your actual API key
+    DEVELOPER_KEY = "Your Api_KEy"
 
     return googleapiclient.discovery.build(
         api_service_name, api_version, developerKey=DEVELOPER_KEY)
@@ -81,7 +81,7 @@ def get_video_details(video_ids):
 
 
 # Fetch data
-channel_id = "UCfbnTUxUech4P1XgYUwYuKA"  # Replace with the channel ID you want to analyze
+channel_id = "UCfbnTUxUech4P1XgYUwYuKA"  # Cold Ones Official Channel To Try
 video_ids = get_channel_videos(channel_id)
 if video_ids:
     video_details = get_video_details(video_ids)
